@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share and Care - UX Case Study</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#problem-statement">Problem</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#wireframing">Wireframes</a></li>
+                <li><a href="#testing">Testing</a></li>
+                <li><a href="#outcome">Outcome</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Share and Care</h1>
+            <p class="subtitle">Enhancing Community Engagement</p>
+            <p class="case-study-desc">A UX case study on solving donation & transportation challenges</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="problem-statement" class="section">
+            <h2>Problem Statement</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>Often, people place large furniture and other household items outside their homes, hoping someone in need will take them. However, these items frequently go to waste due to a lack of awareness or transportation barriers.</p>
+                    <p>Many individuals consider donating to thrift stores, but logistical issues like transportation costs and time constraints prevent them from doing so.</p>
+                    <p>The Share and Care project aims to bridge this gap through an intuitive and accessible digital platform that facilitates donation and collection efficiently.</p>
+                </div>
+                <div class="image-placeholder">
+                    <img src="/assets/Donation_iStock-532393176-1024x683.jpg.webp" alt="Illustration showing donation challenges">
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research & Insights</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>User Interviews</h3>
+                    <p>Surveyed over 20 donors and recipients</p>
+                    <ul class="findings-list">
+                        <li>Transportation difficulties</li>
+                        <li>Lack of awareness about donations</li>
+                        <li>Inconvenient donation process</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>Competitive Analysis</h3>
+                    <p>Analysis of existing platforms revealed:</p>
+                    <ul class="findings-list">
+                        <li>Limited pickup options</li>
+                        <li>Poor real-time connectivity</li>
+                        <li>Complex user interfaces</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>Key Findings</h3>
+                    <ul class="findings-list">
+                        <li>Users prefer mobile-friendly interface</li>
+                        <li>Need for pickup assistance</li>
+                        <li>Location-based search important</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="research-evidence">
+                <h3>User Interview Notes</h3>
+                <div class="interview-notes">
+                    <div class="interview-card">
+                        <div class="interviewee">
+                            <span class="emoji">1️⃣</span>
+                            <h4>Donor: Sarah (35, Homeowner)</h4>
+                        </div>
+                        <blockquote>
+                            "I have an old couch in good condition, but no way to transport it to a thrift store."
+                        </blockquote>
+                        <blockquote>
+                            "I tried listing it online, but no one picked it up, so it sat outside for days."
+                        </blockquote>
+                        <div class="pain-points">
+                            <h5>Pain Points:</h5>
+                            <ul>
+                                <li>No easy transport option for large furniture</li>
+                                <li>Doesn't know which organizations accept donations</li>
+                                <li>Wants a hassle-free pickup service</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="interview-card">
+                        <div class="interviewee">
+                            <span class="emoji">2️⃣</span>
+                            <h4>Thrift Store Manager: James (45, Store Owner)</h4>
+                        </div>
+                        <blockquote>
+                            "We get calls daily from people wanting to donate, but we don't have a truck to pick up items."
+                        </blockquote>
+                        <blockquote>
+                            "We need a better system to match donations with our needs."
+                        </blockquote>
+                        <div class="pain-points">
+                            <h5>Pain Points:</h5>
+                            <ul>
+                                <li>Limited storage space for unplanned donations</li>
+                                <li>No organized system to track incoming items</li>
+                                <li>Needs better coordination with donors</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="interview-card">
+                        <div class="interviewee">
+                            <span class="emoji">3️⃣</span>
+                            <h4>Potential Recipient: Maria (28, College Student)</h4>
+                        </div>
+                        <blockquote>
+                            "I just moved and need furniture, but buying new is expensive."
+                        </blockquote>
+                        <blockquote>
+                            "If I knew where to get free second-hand items, I'd definitely use it."
+                        </blockquote>
+                        <div class="pain-points">
+                            <h5>Pain Points:</h5>
+                            <ul>
+                                <li>No easy way to find free donated furniture</li>
+                                <li>Wants a searchable online catalog of available items</li>
+                                <li>Needs help with transportation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-insights">
+                    <h3>Key Insights from Interviews</h3>
+                    <ul class="insights-list">
+                        <li>Lack of transportation is the biggest barrier for both donors & recipients</li>
+                        <li>Thrift stores struggle with storage & organization of incoming items</li>
+                        <li>Users want a simple digital platform to donate & request items</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="wireframing" class="section">
+            <h2>Wireframing & Prototyping</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>Design Process</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <h4>Low-Fidelity Wireframes</h4>
+                            <p>I created hand-drawn wireframe sketches using pencil and paper, focusing on easy navigation and clear categorization of donation items. This traditional approach allowed for quick iteration and exploration of different layout ideas.</p>
+                        </div>
+                        <div class="step">
+                            <h4>High-Fidelity Prototypes</h4>
+                            <p>After sketching, I developed a fully functional web interface with:</p>
+                            <ul class="feature-list">
+                                <li>One-click donation posting for quick item listing</li>
+                                <li>Request tracking system for monitoring donations</li>
+                                <li>Location-based resource matching</li>
+                            </ul>
+                            <p class="live-site-note">👉 Click on the interface image to view the live website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="prototype-showcase">
+                    <img src="/assets/IMG_7652.JPG" alt="Low-fidelity wireframe sketch">
+                    <a href="https://thewebproject77.netlify.app/" target="_blank"><img src="/assets/home-page.png" alt="High-fidelity prototype"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testing" class="section">
+            <h2>User Testing & Feedback</h2>
+            <div class="testing-grid">
+                <div class="feedback-container">
+                    <h3>Key Feedback</h3>
+                    <div class="feedback-cards">
+                        <div class="feedback-card">
+                            <h4>Search Functionality</h4>
+                            <p>Users requested a faster search option to filter items based on urgency and category.</p>
+                        </div>
+                        <div class="feedback-card">
+                            <h4>Transport Services</h4>
+                            <p>Donors needed a way to connect with local transport services for large-item pickups.</p>
+                        </div>
+                        <div class="feedback-card">
+                            <h4>Categorization</h4>
+                            <p>Recipients wanted better categorization to browse donations efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="improvements">
+                    <h3>Improvements Made</h3>
+                    <ul class="improvements-list">
+                        <li>Enhanced search functionality with category filters</li>
+                        <li>Integrated pickup scheduling system</li>
+                        <li>Improved categorization system</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="outcome" class="section">
+            <h2>Final Outcome</h2>
+            <div class="outcome-grid">
+                <div class="outcome-card">
+                    <h3>Streamlined Listings</h3>
+                    <p>Clear item descriptions and images for efficient donation posting</p>
+                    <img src="/assets/home-page.png" alt="Final design - Listing page">
+                </div>
+                <div class="outcome-card">
+                    <h3>Pickup Coordination</h3>
+                    <p>Integrated system connecting donors with local transport volunteers</p>
+                    <img src="/assets/donate-page.png" alt="Final design - Pickup scheduling">
+                </div>
+                <div class="outcome-card">
+                    <h3>Interactive Search</h3>
+                    <p>Map-based search for finding nearby donations</p>
+                    <img src="/assets/browse-page.png" alt="Final design - Search interface">
+                </div>
+            </div>
+            <div class="real-impact">
+                <h3>Real World Impact</h3>
+                <div class="impact-stats">
+                    <!-- Add your impact statistics here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="section">
+            <h2>Conclusion & Lessons Learned</h2>
+            <div class="lessons-learned">
+                <div class="lesson-card">
+                    <h3>User Feedback is Essential</h3>
+                    <p>Continuous testing and iteration led to a better, more user-friendly platform.</p>
+                </div>
+                <div class="lesson-card">
+                    <h3>Accessibility Matters</h3>
+                    <p>Designing for all users, including those with mobility or digital literacy challenges, improves adoption.</p>
+                </div>
+                <div class="lesson-card">
+                    <h3>Logistics Consideration</h3>
+                    <p>Addressing transportation barriers significantly enhances the donation experience.</p>
+                </div>
+            </div>
+            <div class="future-scope">
+                <h3>Future Scope</h3>
+                <div class="future-features">
+                    <div class="feature-card">
+                        <span class="emoji">🚛</span>
+                        <h4>On-Demand Pickup & Delivery</h4>
+                        <ul>
+                            <li>Partner with local moving companies and volunteers</li>
+                            <li>Real-time tracking system for scheduled pickups</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <span class="emoji">📱</span>
+                        <h4>Mobile App Integration</h4>
+                        <ul>
+                            <li>Mobile app for listing donations and requesting pickups</li>
+                            <li>AI-based donation matching with thrift stores</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <span class="emoji">🛠️</span>
+                        <h4>Smart Donation Stations</h4>
+                        <ul>
+                            <li>Community drop-off points with digital check-ins</li>
+                            <li>QR code scanning for efficient item management</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <span class="emoji">🔄</span>
+                        <h4>Incentives & Gamification</h4>
+                        <ul>
+                            <li>Reward system with points for contributions</li>
+                            <li>Local business partnerships for donation rewards</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <span class="emoji">🌎</span>
+                        <h4>Expansion to More Cities</h4>
+                        <ul>
+                            <li>Scale platform to different communities</li>
+                            <li>Partner with municipalities & NGOs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Share and Care Project</p>
+            <p class="portfolio-link">Designed by <a href="https://mohitshah.com.np">Mohit Shah</a></p>
+        </div>
+    </footer>
+</body>
+</html> 
